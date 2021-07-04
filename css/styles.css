@@ -1,5 +1,6 @@
 /* COLOR PALETTE
 https://coolors.co/e63946-f1faee-a8dadc-457b9d-1d3557
+https://coolors.co/f8f9fa-e9ecef-dee2e6-ced4da-adb5bd-6c757d-495057-343a40-212529
 #E63946 - IMPERIAL RED
 #343434 - dark gray - almost black
 #F1FAEE - HONEYDEW
@@ -7,12 +8,27 @@ https://coolors.co/e63946-f1faee-a8dadc-457b9d-1d3557
 #457B9D - CELADON BLUE
 #1D3557 - PRUSSIAN BLUE
 #F7FFF7 - ALMOST WHITE
+#F8F9FA - Cultured
+#495057 - Davys Grey
 */
 
 /* Global styles
 -------------------------------------- */
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
 body{
     color: #343434 ;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
 }
 img {
     width: 300px;
@@ -23,12 +39,29 @@ a{
 a:hover{
     text-decoration: none;
 }
+h1 {
+    font-size: 100px;
+    font-style: italic;
+}
+h2 {
+    font-size: 45px;
+}
+h1, h2{
+    font-family: 'Playfair Display', serif;
+    font-weight: 350;
+    margin: 0;
+}
+.content-wrap {
+    width: 800px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
 
 /* Profile 
 ----------------------------------------- */
 header{
     background: #1D3557;
-    color: #F1FAEE;
+    color: #F8F9FA;
 }
 
 /* Projects 
@@ -40,20 +73,41 @@ header{
     color: #1D3557;
 }
 .projects .btn{
-    color: #F7FFF7;
+    color: #F8F9FA;
     background: #457B9D;
     text-decoration: none;
     padding: 8px;
     border-radius: 4px;
+    display: inline-block;
 }
 .projects .btn:hover{
     background: rgba(29, 53, 87, 80%);
+}
+.project-item {
+    overflow: hidden;
+    border-bottom: 1px dashed #495057;
+    padding: 25px 0;
+}
+.project-item img{
+    float: left;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+.project-item{
+    margin-top: 0px;
+}
+.container {
+    position: relative;
+    width: 100px;
+    
+
 }
 
 /* Work Experience 
 ------------------------------------------ */
 .work-experience{
     background: #457B9D;
+    color: #343434;
 }
 
 
@@ -71,14 +125,17 @@ header{
 --------------------------------------------- */
 footer{
     background: #343434;
-    color: #F7FFF7;
+    color: #F8F9FA;
 }
 footer a{
-    color: #F7FFF7;
+    color: #F8F9FA;
     background: #457B9D;
     text-decoration: none;
     padding: 8px;
-    border-radius: 4px;
+    border-radius: 4px;  
+}
+footer li {
+    padding: 10px;
 }
 footer a:hover{
     background: rgba(29, 53, 87, 80%);

@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Miguel's Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@500&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
 </head>
 
@@ -12,160 +16,191 @@
   <main>
     <!-- ***********************  ABOUT / PROFILE  *********************** -->
     <header>
-      <h1>Miguel Andrade</h1>
-      <h2>Graduate student from CSULB</h2>
+      <div class="content-wrap">
+        <h1>Miguel Andrade</h1>
+        <h2>Graduate student from CSULB</h2>
 
-      <p>During my education at California State University, Long Beach, I spent my time studying Management Information
-        Systems.
-        Now that I have graduated, I plan to pursue a career in data analytics.</p>
-      <p>I am also exploring more creative pursuits learning programming languages like R, Python, and SQl and
-        strengthening my analytical skills.</p>
+        <p>During my time at California State University, Long Beach, I spent my time studying Management Information
+          Systems.
+          Now that I have graduated, I plan to pursue a career in data analytics.</p>
+        <p>I am also exploring more creative pursuits learning programming languages like R, Python, and SQl and
+          strengthening my analytical skills.</p>
+      </div>
     </header>
 
     <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
     <section class="projects">
-      <h2>Featured Projects</h2>
-      <p>View selected projects below. More information can be found at 
-      <a  href="https://github.com/andrademiguel">miguelandrade.com</a>.</p>
+      <div class="content-wrap">
+        <h2>Featured Projects</h2>
+        <p>View selected projects below. More information can be found at
+          <a href="https://github.com/andrademiguel">miguelandrade.com</a>.
+        </p>
 
-      <!-- Copy the whole <section> block to add more projects. -->
-      <section>
-        <h3>The Sales Order System</h3>
-        <img src="/images/sql-customer.png" alt="Oracle 11g SQL Customer Table">
-        <img src="/images/sql-warehouse.png" alt="Oracle 11g SQL Warehouse Table">
-        <p>Applied SQL to communicate with Oracle Database 11g; design and implement a sales order processing system
-          operated by users in the Operations department to process sales orders.</p>
-        <a class="btn" href="https://github.com/andrademiguel" target="_blank">View the project / case study</a>
-      </section>
-      <!-- End of Project block. -->
+        <!-- Copy the whole <section> block to add more projects. -->
+        <section class="project-item">
+          <div class="container">
+            <img class="allsafeone" src="/images/user-dashboard.png" alt="AllSafe user dashboard">
+            <img class="allsafetwo" src="/images/phising-simulator.png" alt="AllSafe integrated phishing simulator">
+          </div>
+          <h3>AllSafe Security</h3>
+          <p>AllSafe Security is a new technology company that provides a software-as-a-service delivery model to
+            organizations
+            through a collection of tools, including cybersecurity awareness training, application/ system maintenance,
+            and employee
+            oversight to manage and minimize instances of poor employee behavior stemming from bad habits. </p>
+          <a class="btn" href="https://github.com/andrademiguel" target="_blank">View the project / case study</a>
+          <h4>AllSafe Mission Statement</h4>
+          <p>To empower businesses to build and promote cybersecurity awareness culture through training and effective
+            tools throughout their workforce.</p>
+        </section>
+        <!-- End of Project block. -->
 
-      <!-- Copy the whole <section> block to add more projects. -->
-      <section>
-        <h3>AllSafe Security</h3>
-        <img src="/images/administrator-dashboard-screen.png" alt="AllSafe administrator dashboard">
-        <img src="/images/user-dashboard.png" alt="AllSafe user dashboard">
-        <img src="/images/phising-simulator.png" alt="AllSafe integrated phishing simulator">
-        <p>AllSafe Security is a new technology company that provides a software-as-a-service delivery model to organizations 
-        through a collection of tools, including cybersecurity awareness training, application/ system maintenance, and employee
-        oversight to manage and minimize instances of poor employee behavior stemming from bad habits. </p>
-        <a class="btn" href="https://github.com/andrademiguel" target="_blank">View the project / case study</a>
-        <h5>AllSafe Mission Statement</h5>
-        <p>To empower businesses to build and promote cybersecurity awareness culture through training and effective tools throughout their workforce.</p>
-      </section>
-      <!-- End of Project block. -->
+        <!-- Copy the whole <section> block to add more projects. -->
+        <section class="project-item">
+          <div class="container">
+            <img src="/images/python-project-code.png" alt="Python program code">
+            <img src="/images/python-project-output.png" alt="Python program output">
+          </div>
+          <h3>IS 340 Python Project </h3>
+          <p>The program applies the following programming concepts: use of functions, loops, if conditions, variables,
+            lists, dictionaries, reading from a file, writing into a file, use of libraries – such text mining, and
+            statistics.
+            Also, the program applies text-mining methods on the unstructured data and report results.
+            The program will perform statistical analysis (I.e. average, standard deviation, minimum, maximum, etc) on
+            numerical data
+            You should group data based on one or more criteria (such sub-category, names, rating) to draw insights.</p>
+          <a class="btn" href="https://github.com/andrademiguel" target="_blank">View the project / case study</a>
+        </section>
+        <!-- End of Project block. -->
 
-      <!-- Copy the whole <section> block to add more projects. -->
-      <section>
-        <h3>IS 340 Python Project </h3>
-        <img src="/images/python-project-code.png" alt="Python program code">
-        <img src="/images/python-project-output.png" alt="Python program output">
-        <p>The program applies the following programming concepts: use of functions, loops, if conditions, variables, 
-        lists, dictionaries, reading from a file, writing into a file, use of libraries – such text mining, and statistics.
-        Also, the program applies text-mining methods on the unstructured data and report results.
-        The program will perform statistical analysis (I.e. average, standard deviation, minimum, maximum, etc) on numerical data
-        You should group data based on one or more criteria (such sub-category, names, rating) to draw insights.</p>
-        <a class="btn" href="https://github.com/andrademiguel" target="_blank">View the project / case study</a>
-      </section>
-      <!-- End of Project block. -->
+        <!-- Copy the whole <section> block to add more projects. -->
+        <section class="project-item">
+          <div class="container">
+            <img src="/images/sql-customer.png" alt="Oracle 11g SQL Customer Table">
+            <img src="/images/sql-warehouse.png" alt="Oracle 11g SQL Warehouse Table">
+          </div>
+          <h3>The Sales Order System</h3>
+          <p>Applied SQL to communicate with Oracle Database 11g; design and implement a sales order processing system
+            operated by users in the Operations department to process sales orders.</p>
+          <a class="btn" href="https://github.com/andrademiguel" target="_blank">View the project / case study</a>
+        </section>
+        <!-- End of Project block. -->
+      </div>
     </section>
 
     <!-- ***********************  WORK EXPERIENCE  *********************** -->
     <section class="work-experience">
-      <h2>Work Experience</h2>
-      <!-- <p>Optional paragraph for work experience summary. Not a part of the job details. Delete if not being used.</p> -->
+      <div class="content-wrap">
+        <h2>Work Experience</h2>
+        <!-- <p>Optional paragraph for work experience summary. Not a part of the job details. Delete if not being used.</p> -->
 
-      <!-- Copy this whole <section> block to add more jobs. -->
-      <section>
-        <h3>Office Assistant (Badging Office)</h3>
-        <p>OC Fair and Event Center</p>
-        <p>June 2021 - Present</p>
+        <!-- Copy this whole <section> block to add more jobs. -->
+        <section>
+          <h3>Office Assistant (Badging Office)</h3>
+          <p>OC Fair and Event Center</p>
+          <p>June 2021 - Present</p>
 
-        <ul>
-          <li>Maintained a variety of department records and files, such as badge lists and Megan’s Law paperwork.</li>
-          <li>Performed computer data input, generate reports, and filed and shredded documents as requested.</li>
-          <li>Handled badging duties throughout the Fair—take photos of fair employees and produce photo badges with
-            lanyards for distribution to employees listed on valid badge lists.</li>
-          <li>Assisted with walk-in traffic to the office, including department employees, other organizational
-            employees, business partners, guests, and patrons.</li>
-        </ul>
-      </section>
-      <!-- End of Job block. -->
+          <ul>
+            <li>Maintained a variety of department records and files, such as badge lists and Megan’s Law paperwork.
+            </li>
+            <li>Performed computer data input, generate reports, and filed and shredded documents as requested.</li>
+            <li>Handled badging duties throughout the Fair—take photos of fair employees and produce photo badges with
+              lanyards for distribution to employees listed on valid badge lists.</li>
+            <li>Assisted with walk-in traffic to the office, including department employees, other organizational
+              employees, business partners, guests, and patrons.</li>
+          </ul>
+        </section>
+        <!-- End of Job block. -->
+      </div>
     </section>
 
     <!-- ***********************  Volunteer EXPERIENCE  *********************** -->
     <section class="volunteer-experience">
-      <h2>Volunteer Experience</h2>
-      <!-- <p>Optional paragraph for work experience summary. Not a part of the job details. Delete if not being used.</p> -->
+      <div class="content-wrap">
+        <h2>Volunteer Experience</h2>
+        <!-- <p>Optional paragraph for work experience summary. Not a part of the job details. Delete if not being used.</p> -->
 
-      <!-- Copy this whole <section> block to add more jobs. -->
-      <section>
-        <h3>VP of Memberships</h3>
-        <p>Association for Information Systems CSULB</p>
-        <p>August 2020 - December 2020</p>
+        <!-- Copy this whole <section> block to add more jobs. -->
+        <section>
+          <h3>VP of Memberships</h3>
+          <p>Association for Information Systems CSULB</p>
+          <p>August 2020 - December 2020</p>
 
-        <ul>
-          <li>Collaborated with the president, marketing, and event officers to develop campaigns and initiatives for
-            recruitment and retention.</li>
-          <li>Tracked and maintained attendance records of members for retention purposes.</li>
-          <li>Assisted in weekly activities to retain member engaged with the organization.</li>
-          <li>Gathered relevant career field and club information to compose weekly digital newsletters for our AIS
-            members.</li>
-        </ul>
-      </section>
-      <!-- End of Job block. -->
+          <ul>
+            <li>Collaborated with the president, marketing, and event officers to develop campaigns and initiatives for
+              recruitment and retention.</li>
+            <li>Tracked and maintained attendance records of members for retention purposes.</li>
+            <li>Assisted in weekly activities to retain member engaged with the organization.</li>
+            <li>Gathered relevant career field and club information to compose weekly digital newsletters for our AIS
+              members.</li>
+          </ul>
+        </section>
+        <!-- End of Job block. -->
 
-      <!-- Copy this whole <section> block to add more jobs. -->
-      <section>
-        <h3>VP of Tech</h3>
-        <p>Association for Information Systems CSULB</p>
-        <p>January 2021 - May 2021</p>
-        <ul>
-          <li>Coordinated a visualization workshop using the Tableau program that helped students get familiarize with
-            the software.</li>
-          <li>Managed and update website using WordPress.</li>
-          <li>Managed the club Discord to keep members updated with planned events.</li>
-          <li>Assisted with member engaged by participating in biweekly online activities.</li>
-        </ul>
-      </section>
-      <!-- End of Job block. -->
-      <section>
-        <h3>Zoom Facilitator</h3>
-        <p>ISACA - Los Angeles Chapter</p>
-        <p>April 2021</p>
-        <ul>
-          <li>Assisted participants and presenter to address any technical question or issues.</li>
-          <li>Monitored the activities entered in the chat box and provided an appropriate response.</li>
-          <li>Promoted event sponsors using the chat tool in Zoom.</li>
-        </ul>
-      </section>
-      <!-- End of Job block. -->
+        <!-- Copy this whole <section> block to add more jobs. -->
+        <section>
+          <h3>VP of Tech</h3>
+          <p>Association for Information Systems CSULB</p>
+          <p>January 2021 - May 2021</p>
+          <ul>
+            <li>Coordinated a visualization workshop using the Tableau program that helped students get familiarize with
+              the software.</li>
+            <li>Managed and update website using WordPress.</li>
+            <li>Managed the club Discord to keep members updated with planned events.</li>
+            <li>Assisted with member engaged by participating in biweekly online activities.</li>
+          </ul>
+        </section>
+        <!-- End of Job block. -->
+        <section>
+          <h3>Zoom Facilitator</h3>
+          <p>ISACA - Los Angeles Chapter</p>
+          <p>April 2021</p>
+          <ul>
+            <li>Assisted participants and presenter to address any technical question or issues.</li>
+            <li>Monitored the activities entered in the chat box and provided an appropriate response.</li>
+            <li>Promoted event sponsors using the chat tool in Zoom.</li>
+          </ul>
+        </section>
+        <!-- End of Job block. -->
+      </div>
     </section>
     <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
     <section class="education">
-      <h2>Education</h2>
+      <div class="content-wrap">
+        <h2>Education</h2>
 
-      <!-- Copy this whole <section> block to add more schools. -->
-      <section>
-        <h3>California State University, Long Beach - Long Beach, CA</h3>
-        <p>B.S. Business Administration - Management Information Systems, year attended</p>
-        <p>Related Courses: Business Analytics, Application Development, Cyber Security, Management</p>
-      </section>
-      <!-- End of School block. -->
+        <!-- Copy this whole <section> block to add more schools. -->
+        <section>
+          <h3>California State University, Long Beach - Long Beach, CA</h3>
+          <p>B.S. Business Administration - Management Information Systems, May 2021</p>
+          <p>Related Courses: Business Analytics, Application Development, Cyber Security, Management</p>
+        </section>
+        <!-- End of School block. -->
+        <!-- Copy this whole <section> block to add more schools. -->
+        <section>
+          <h3>Golden West College, Huntington Beach, CA</h3>
+          <p>A.S. Business Administration, May 2019</p>
+          <p>Related Courses: Accounting, Economics, Finance, Management</p>
+        </section>
+        <!-- End of School block. -->
+      </div>
     </section>
 
     <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
     <footer>
-      <h2>Let's Keep in Touch!</h2>
+      <div class="content-wrap">
+        <h2>Let's Keep in Touch!</h2>
 
-      <!-- Social media and contact links. Add or remove any networks. -->
-      <ul>
-        <li><a href="mailto:andrade4miguel@outlook.com">andrade4miguel@outlook.com</a></li>
-        <!-- <li><a href="http://yourwebsite.com" target="_blank">yourwebsite.com</a></li> -->
-        <li><a href="https://twitter.com/Miguel_Andrade4" target="_blank">Twitter</a></li>
-        <li><a href="https://www.linkedin.com/in/miguel-andrade4/" target="_blank">LinkedIn</a></li>
-        <li><a href="https://github.com/andrademiguel" target="_blank">GitHub</a></li>
-        <!-- <li><a href="#" target="_blank">Facebook</a></li> -->
-      </ul>
+        <!-- Social media and contact links. Add or remove any networks. -->
+        <ul>
+          <li><a href="mailto:andrade4miguel@outlook.com">andrade4miguel@outlook.com</a></li>
+          <!-- <li><a href="http://yourwebsite.com" target="_blank">yourwebsite.com</a></li> -->
+          <li><a href="https://www.linkedin.com/in/miguel-andrade4/" target="_blank">LinkedIn</a></li>
+          <li><a href="https://github.com/andrademiguel" target="_blank">GitHub</a></li>
+          <li><a href="https://twitter.com/Miguel_Andrade4" target="_blank">Twitter</a></li>
+          <!-- <li><a href="#" target="_blank">Facebook</a></li> -->
+        </ul>
+      </div>
     </footer>
   </main>
 </body>
